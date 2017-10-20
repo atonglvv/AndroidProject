@@ -1,12 +1,10 @@
-package com.example.ubi.activity;
+package com.example.ubi.recycleviewforbook;
 
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.view.MenuItem;
-
-import com.example.ubi.recycleviewforbook.R;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
 
