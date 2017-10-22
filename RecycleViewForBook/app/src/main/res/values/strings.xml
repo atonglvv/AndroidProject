@@ -1,6 +1,9 @@
 <resources>
     <string name="app_name">Attitude</string>
 
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    
     <string name="nav_header_text">Innovation</string>
     <string name="nav_recycler_view">个人主页</string>
     <string name="nav_scrolling">Scrolling</string>

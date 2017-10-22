@@ -3,7 +3,7 @@
 
     <group android:checkableBehavior="none">
         <item
-            android:id="@+id/nav_recycler_and_swipe_refresh"
+            android:id="@+id/nav_person_homepage"
             android:icon="@drawable/ic_format_list_bulleted_black_24dp"
             android:title="@string/nav_recycler_view" />
         <item
