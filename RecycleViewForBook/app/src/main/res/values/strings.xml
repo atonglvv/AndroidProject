@@ -16,4 +16,8 @@
     <string name="main_not_found_email">Not found email app</string>
     <string name="nav_my_apps">My Apps</string>
     <string name="nav_color">Material Design Color</string>
+
+    <string name="tv_recycler_item_1">Swipe down to refresh</string>
+    <string name="tv_recycler_item_2">Swipe left or right to dismiss it</string>
+    <string name="tv_recycler_item_3">Drag up or down to move it</string>
 </resources>

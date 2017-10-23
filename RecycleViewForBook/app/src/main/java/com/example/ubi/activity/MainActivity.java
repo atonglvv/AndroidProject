@@ -3,10 +3,12 @@ package com.example.ubi.activity;
 import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v4.widget.DrawerLayout;
+import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
+import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
@@ -31,6 +33,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     DrawerLayout mDrawerLayout;
     @BindView(R.id.nav_view)
     NavigationView mNavigationView;
+    @BindView(R.id.recyclerView)
+    RecyclerView mRecycleView;
+    @BindView(R.id.swipe_refresh_layout_recycler_view)
+    SwipeRefreshLayout mSwipeRefreshLayout;
 
     private ActionBarDrawerToggle mDrawerToggle;
     //    获取R.layout.nav_header_main中的R.id.imageView_nav_header 方法一
@@ -38,6 +44,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private RoundAngleImageView userAvatar;
     //    方法二
     //    private View headerView;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -67,6 +75,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         mNavigationView.setNavigationItemSelectedListener(this);
     }
+
+
 
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {

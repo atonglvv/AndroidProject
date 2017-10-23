@@ -5,4 +5,15 @@
     <dimen name="nav_header_height">160dp</dimen>
     <dimen name="tabsHeight">48dp</dimen>
     <dimen name="fab_margin">0dp</dimen>
+
+    <dimen name="card_margin_horizontal">8dp</dimen>
+    <dimen name="card_margin_vertical">8dp</dimen>
+    <dimen name="card_margin_horizontal_big_activity">8dp</dimen>
+    <dimen name="card_margin_vertical_big_activity">4dp</dimen>
+    <dimen name="card_recycler_corner_radius">2dp</dimen>
+    <dimen name="card_recycler_elevation">2dp</dimen>
+
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="text_margin_small">8dp</dimen>
+    <dimen name="text_margin_very_small">4dp</dimen>
 </resources>
