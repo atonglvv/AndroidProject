@@ -20,10 +20,10 @@
 
         <ImageView
             android:id="@+id/iv_recycler"
-            android:layout_width="56dp"
-            android:layout_height="56dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
             android:layout_centerVertical="true"
-            android:layout_marginRight="@dimen/text_margin"
+            android:layout_marginRight="@dimen/text_margin_small"
             android:src="@drawable/head_image"
             android:backgroundTint="@color/gray_light"
             android:transitionName="shareView" />
