@@ -1,4 +1,4 @@
-package data;
+package com.example.ubi.data;
 
 import java.io.Serializable;
 

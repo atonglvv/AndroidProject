@@ -6,7 +6,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.example.ubi.recycleviewforbook.R;
@@ -16,7 +15,7 @@ import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import data.Info;
+import com.example.ubi.data.Info;
 
 /**
  * Created by lt155 on 2017/10/23.

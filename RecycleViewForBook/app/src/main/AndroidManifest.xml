@@ -21,6 +21,7 @@
 
         <activity
             android:name="com.example.ubi.activity.PersonActivity"
+            android:theme="@style/AppTheme.NoActionBar"
             android:parentActivityName="com.example.ubi.activity.MainActivity" />
 
     </application>

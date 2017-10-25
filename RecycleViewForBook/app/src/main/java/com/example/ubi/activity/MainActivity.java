@@ -1,9 +1,8 @@
 package com.example.ubi.activity;
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.Handler;
-import android.support.annotation.NonNull;
+import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -14,11 +13,8 @@ import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
-import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
@@ -28,11 +24,10 @@ import com.example.ubi.view.RoundAngleImageView;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.zip.Inflater;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import data.Info;
+import com.example.ubi.data.Info;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -54,7 +49,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     //    方法二
     //    private View headerView;
     private RecyclerViewAdapter adapter;
-    private LinearLayoutManager linearLayoutManager;
     private List<Info> infos;
 
 
@@ -102,25 +96,28 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         mNavigationView.setNavigationItemSelectedListener(this);
         initInfoData();
 
-
-
-//        linearLayoutManager = new LinearLayoutManager(MainActivity.this);
-//        linearLayoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);
-//        mRecycleView.setLayoutManager(linearLayoutManager);
         mRecycleView.setLayoutManager(new LinearLayoutManager(this));
         mRecycleView.setItemAnimator(new DefaultItemAnimator());
         adapter = new RecyclerViewAdapter(infos,this);
         mRecycleView.setAdapter(adapter);
-        Toast.makeText(this,"HelloWorld",Toast.LENGTH_SHORT).show();
 
     }
 
     private void initInfoData() {
         infos = new ArrayList<Info>();
-        infos.add(new Info(R.drawable.avatar,"《英雄联盟》S7总决赛门票被炒翻27倍","今天LOL官方公布了S7总决赛门票价格，分别为。。。","2017-10-24"));
-        infos.add(new Info(R.drawable.avatar,"《英雄联盟》S7总决赛门票被炒翻27倍","今天LOL官方公布了S7总决赛门票价格，分别为。。。","2017-10-24"));
+        for(int i = 0; i < 10;i++){
+            infos.add(new Info(R.drawable.avatar,"《英雄联盟》S7总决赛门票被炒翻27倍","今天LOL官方公布了S7总决赛门票价格，分别为。。。","2017-10-24"));
+        }
     }
 
+    @Override
+    public void onBackPressed(){
+        if(mDrawerLayout.isDrawerOpen(GravityCompat.START)){
+            mDrawerLayout.closeDrawer(GravityCompat.START);
+        }else{
+            super.onBackPressed();
+        }
+    }
 
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
