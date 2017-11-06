@@ -19,7 +19,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name="com.example.ubi.activity.MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
@@ -27,12 +26,15 @@
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
         </activity>
-
         <activity
             android:name="com.example.ubi.activity.PersonActivity"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:parentActivityName="com.example.ubi.activity.MainActivity" />
+            android:parentActivityName="com.example.ubi.activity.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
 
+        <service
+            android:name="com.example.ubi.service.MyService"
+            android:enabled="true"
+            android:exported="true"></service>
     </application>
 
 </manifest>
