@@ -25,5 +25,7 @@ public class PersonActivity extends AppCompatActivity {
 
         mToolbar.setTitle("个人主页");
         setSupportActionBar(mToolbar);
+        //设置是否有返回箭头
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 }
