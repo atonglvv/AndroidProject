@@ -27,8 +27,8 @@
         </activity>
         <activity
             android:name="com.example.ubi.activity.PersonActivity"
-            android:theme="@style/AppTheme.NoActionBar_StatusBar"
-            android:parentActivityName="com.example.ubi.activity.MainActivity" >
+            android:parentActivityName="com.example.ubi.activity.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar_StatusBar" >
         </activity>
 
         <service

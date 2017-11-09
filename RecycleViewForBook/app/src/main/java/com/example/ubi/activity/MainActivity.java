@@ -74,10 +74,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         mToolbar.setTitle("Attitude");
         setSupportActionBar(mToolbar);
+
         mDrawerToggle = new ActionBarDrawerToggle(this, mDrawerLayout, mToolbar, R.string.drawer_open,
                 R.string.drawer_close);
-        mDrawerToggle.syncState();
         mDrawerLayout.addDrawerListener(mDrawerToggle);
+        mDrawerToggle.syncState();
 
         //        方法一
         headerView = (LinearLayout) mNavigationView.getHeaderView(0);
@@ -158,6 +159,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 startActivity(intent);
                 break;
         }
+
+        mDrawerLayout.closeDrawer(GravityCompat.START);
         return true;
     }
 }
