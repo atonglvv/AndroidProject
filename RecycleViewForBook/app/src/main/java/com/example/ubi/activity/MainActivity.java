@@ -19,7 +19,7 @@ import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import com.example.ubi.adapter.RecyclerViewAdapter;
-import com.example.ubi.recycleviewforbook.R;
+import com.example.ubi.R;
 import com.example.ubi.view.RoundAngleImageView;
 
 import java.util.ArrayList;
@@ -129,7 +129,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 intent.setClass(this, PersonActivity.class);
                 startActivity(intent);
                 break;
-            case R.id.nav_scrolling:
+            case R.id.nav_my_collection:
                 intent.setClass(this, PersonActivity.class);
                 startActivity(intent);
                 break;

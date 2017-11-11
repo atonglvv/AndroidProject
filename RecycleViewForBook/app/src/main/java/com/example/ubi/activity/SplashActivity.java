@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 
-import com.example.ubi.recycleviewforbook.R;
+import com.example.ubi.R;
 
 public class SplashActivity extends AppCompatActivity {
 
@@ -20,6 +20,6 @@ public class SplashActivity extends AppCompatActivity {
                 startActivity(intent);
                 finish();
             }
-        }, 2000);
+        }, 1200);
     }
 }

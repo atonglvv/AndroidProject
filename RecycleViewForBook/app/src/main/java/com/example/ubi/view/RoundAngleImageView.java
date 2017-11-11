@@ -15,7 +15,8 @@ import android.graphics.RectF;
 import android.util.AttributeSet;
 import android.widget.ImageView;
 
-import com.example.ubi.recycleviewforbook.R;
+import com.example.ubi.R;
+
 
 /**
  * 实现圆角头像

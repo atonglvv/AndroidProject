@@ -6,7 +6,7 @@
     
     <string name="nav_header_text">Innovation</string>
     <string name="nav_personal_homepage">个人主页</string>
-    <string name="nav_scrolling">Scrolling</string>
+    <string name="nav_my_collection">我的收藏</string>
     <string name="nav_fullscreen">FullScreen</string>
     <string name="nav_bottom_navigation">Bottom Navigation</string>
     <string name="nav_settings">Settings</string>

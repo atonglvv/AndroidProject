@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.ubi.recycleviewforbook.R;
+import com.example.ubi.R;
 
 import java.util.ArrayList;
 import java.util.List;
