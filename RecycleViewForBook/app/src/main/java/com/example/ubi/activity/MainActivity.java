@@ -130,7 +130,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 startActivity(intent);
                 break;
             case R.id.nav_my_collection:
-                intent.setClass(this, PersonActivity.class);
+                intent.setClass(this, Collection.class);
                 startActivity(intent);
                 break;
 

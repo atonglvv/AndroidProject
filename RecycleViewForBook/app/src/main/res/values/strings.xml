@@ -3,7 +3,7 @@
 
     <string name="drawer_open">Open</string>
     <string name="drawer_close">Close</string>
-    
+
     <string name="nav_header_text">Innovation</string>
     <string name="nav_personal_homepage">个人主页</string>
     <string name="nav_my_collection">我的收藏</string>
@@ -20,4 +20,11 @@
     <string name="tv_recycler_item_1">Swipe down to refresh</string>
     <string name="tv_recycler_item_2">Swipe left or right to dismiss it</string>
     <string name="tv_recycler_item_3">Drag up or down to move it</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--Collection tab-->
+    <string name="tab_1">已关注</string>
+    <string name="tab_2">未关注</string>
 </resources>

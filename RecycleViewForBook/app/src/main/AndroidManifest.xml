@@ -31,6 +31,12 @@
             android:parentActivityName=".activity.MainActivity"
             android:theme="@style/AppTheme.NoActionBar_StatusBar" >
         </activity>
+        <activity
+            android:name=".activity.Collection"
+            android:label="我的收藏"
+            android:parentActivityName=".activity.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar_StatusBar" >
+        </activity>
 
         <service
             android:name=".service.MyService"
