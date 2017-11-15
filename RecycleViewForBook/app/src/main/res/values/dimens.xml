@@ -16,4 +16,7 @@
     <dimen name="text_margin">16dp</dimen>
     <dimen name="text_margin_small">8dp</dimen>
     <dimen name="text_margin_very_small">4dp</dimen>
+
+    <dimen name="collection_tablayout_width">160dp</dimen>
+    <dimen name="collection_tabIndicatorHeight">2dp</dimen>
 </resources>

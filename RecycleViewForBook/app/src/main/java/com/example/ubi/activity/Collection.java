@@ -26,20 +26,22 @@ import butterknife.ButterKnife;
 
 public class Collection extends AppCompatActivity {
     @BindView(R.id.toolbar)
-    Toolbar mToolbar;
+    Toolbar toolbar;
+    @BindView(R.id.tabLayout)
+    TabLayout tabLayout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_collection);
         ButterKnife.bind(this);
 
-//        mToolbar.setTitle("个人主页");
-        setSupportActionBar(mToolbar);
+        setSupportActionBar(toolbar);
         //设置是否有返回箭头
         if (getSupportActionBar() != null) {
             getSupportActionBar().setHomeButtonEnabled(true); //设置返回键可用
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         }
+        initViewPagerAndTabs();
     }
 
     private void initViewPagerAndTabs() {
@@ -48,7 +50,6 @@ public class Collection extends AppCompatActivity {
         pagerAdapter.addFragment(CollectionFragment.newInstance(), getString(R.string.tab_1));
         pagerAdapter.addFragment(CollectionFragment.newInstance(), getString(R.string.tab_2));
         viewPager.setAdapter(pagerAdapter);
-        TabLayout tabLayout = (TabLayout) findViewById(R.id.tabLayout);
         tabLayout.setupWithViewPager(viewPager);
     }
 

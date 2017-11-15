@@ -25,6 +25,6 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
     <!--Collection tab-->
-    <string name="tab_1">已关注</string>
-    <string name="tab_2">未关注</string>
+    <string name="tab_1">微博</string>
+    <string name="tab_2">网页</string>
 </resources>
