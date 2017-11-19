@@ -17,15 +17,17 @@
                 <action android:name="android.intent.action.HOME" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".activity.SplashActivity"
+        <activity
+            android:name=".activity.SplashActivity"
             android:screenOrientation="portrait"
             android:theme="@style/ThemeSplash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".activity.CalculateActivity"></activity>
     </application>
 
 </manifest>
