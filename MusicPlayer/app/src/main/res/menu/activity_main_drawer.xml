@@ -5,19 +5,19 @@
         <item
             android:id="@+id/nav_camera"
             android:icon="@drawable/ic_menu_camera"
-            android:title="Import" />
+            android:title="我的消息" />
         <item
             android:id="@+id/nav_gallery"
             android:icon="@drawable/ic_menu_gallery"
-            android:title="Gallery" />
+            android:title="会员中心" />
         <item
             android:id="@+id/nav_slideshow"
             android:icon="@drawable/ic_menu_slideshow"
-            android:title="Slideshow" />
+            android:title="商城" />
         <item
             android:id="@+id/nav_manage"
             android:icon="@drawable/ic_menu_manage"
-            android:title="Tools" />
+            android:title="我的好友" />
     </group>
 
     <item android:title="Communicate">
@@ -25,11 +25,10 @@
             <item
                 android:id="@+id/nav_share"
                 android:icon="@drawable/ic_menu_share"
-                android:title="Share" />
+                android:title="分享" />
             <item
                 android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
-                android:title="Send" />
+                android:title="设置" />
         </menu>
     </item>
 
