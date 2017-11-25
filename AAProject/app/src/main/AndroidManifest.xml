@@ -28,7 +28,11 @@
             </intent-filter>
         </activity>
         <activity android:name=".activity.CalculateActivity" />
-        <activity android:name=".activity.SettingActivity"></activity>
+        <activity android:name=".activity.SettingActivity" />
+        <activity
+            android:name=".activity.BasicInfoActivity"
+            android:label="@string/title_activity_basic_info"
+            android:theme="@style/AppTheme"></activity>
     </application>
 
 </manifest>
